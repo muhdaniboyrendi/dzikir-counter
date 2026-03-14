@@ -1,13 +1,21 @@
+<script setup>
+const props = defineProps({
+  isLailatulQadr: {
+    type: Boolean,
+  },
+});
+
+const emit = defineEmits(["lailatulQadr"]);
+</script>
+
 <template>
-  <div class="px-4">
-    <NuxtLink
-      to="/lailatul-qodar"
-      class="w-full p-6 rounded-3xl bg-amber-500 dark:bg-amber-600 flex items-center gap-4"
+  <div class="px-4 mb-10">
+    <button
+      @click="emit('lailatulQadr')"
+      type="button"
+      class="w-full max-w-lg mx-auto h-15 bg-secondary rounded-2xl flex justify-center items-center active:scale-97 transition text-primary text-xl"
     >
-      <i class="bi bi-moon-stars-fill text-4xl text-white"></i>
-      <span class="text-xl text-white font-secondary">
-        Mode Lailatul Qodar
-      </span>
-    </NuxtLink>
+      {{ props.isLailatulQadr ? "Mode Biasa" : "Mode Lailatul Qodar" }}
+    </button>
   </div>
 </template>

@@ -7,6 +7,9 @@
 @theme {
   --color-ground-white: #F8FAFC;
   --color-ground-black: #121212;
+  --color-primary: #F0E8D5;
+  --color-secondary: #004040;
+  --color-tertiary: #BEA473;
 
   --font-arabic: "Noto Naskh Arabic", serif;
   --font-primary: "Montserrat", sans-serif;

@@ -11,7 +11,7 @@ const modes = [
 <template>
   <footer class="w-full py-6 px-4">
     <div
-      class="w-fit mx-auto rounded-full flex justify-center items-center gap-1 p-1 border border-black/15 dark:border-white/15 mb-4"
+      class="w-fit mx-auto rounded-full flex justify-center items-center gap-1 p-1 border border-tertiary mb-4"
     >
       <button
         v-for="mode in modes"
@@ -21,8 +21,8 @@ const modes = [
         :class="[
           'w-7 h-7 aspect-square rounded-full flex justify-center items-center text-sm transition-colors',
           colorMode.preference === mode.value
-            ? 'bg-amber-500 text-white'
-            : 'bg-transparent text-black/50 dark:text-white/50 hover:bg-black/10 dark:hover:bg-white/10',
+            ? 'bg-secondary text-white'
+            : 'bg-transparent text-secondary hover:bg-tertiary/20',
         ]"
         @click="colorMode.preference = mode.value"
       >
@@ -31,21 +31,18 @@ const modes = [
     </div>
 
     <div class="mb-4 text-center">
-      <a
-        href="#"
-        target="_blank"
-        class="text-sm text-amber-600/80 dark:text-amber-500/60 hover:underline"
+      <a href="#" target="_blank" class="text-sm text-tertiary hover:underline"
         >/source</a
       >
     </div>
 
     <div class="text-center">
-      <p class="text-xs text-black/60 dark:text-white/60">
+      <p class="text-xs text-tertiary">
         &copy; 2026
         <a
           href="https://erlanazhari.my.id"
           target="_blank"
-          class="font-semibold text-amber-500 dark:text-amber-600 hover:underline"
+          class="font-semibold text-secondary hover:underline"
           >Muhdani Boyrendi Erlan Azhari</a
         >. All Right Reserved.
       </p>
