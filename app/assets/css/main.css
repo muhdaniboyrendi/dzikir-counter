@@ -10,6 +10,10 @@
   --color-primary: #F0E8D5;
   --color-secondary: #004040;
   --color-tertiary: #BEA473;
+  --color-dark-primary: #0E1A1A;
+  --color-dark-secondary: #006060;
+  --color-dark-tertiary: #C8A870;
+  --color-dark-text-primary: #D4C8A8;
 
   --font-arabic: "Noto Naskh Arabic", serif;
   --font-primary: "Montserrat", sans-serif;

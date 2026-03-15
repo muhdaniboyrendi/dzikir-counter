@@ -7,7 +7,7 @@ const toggleLailatulQadr = () => {
 </script>
 
 <template>
-  <div class="relative min-h-dvh bg-primary font-primary pb-10">
+  <div class="relative min-h-dvh bg-primary dark:bg-dark-primary font-primary pb-10">
     <!-- Background image -->
     <NuxtImg
       src="/llq.webp"
